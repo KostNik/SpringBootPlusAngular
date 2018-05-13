@@ -1,4 +1,7 @@
 package com.home.edu.sba.repository;
 
-public interface TaskRepository {
+import com.home.edu.sba.domain.Task;
+import org.springframework.data.repository.CrudRepository;
+
+public interface TaskRepository extends CrudRepository<Task, Long> {
 }
